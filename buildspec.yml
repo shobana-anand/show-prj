@@ -9,11 +9,11 @@ phases:
   build:
     commands:
       - echo "Building Docker image..."
-      - docker build -t my-app-image-v3:latest .
+      - docker build -t my-app-image-v4:latest .
 
   post_build:
     commands:
       - echo "Tagging Docker image..."
-      - docker tag my-app-image-v3:latest 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:success.3.0.0
+      - docker tag my-app-image-v4:latest 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:success.4.0.0
       - echo "Pushing Docker image to ECR..."
-      - docker push 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:success.3.0.0
+      - docker push 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:success.4.0.0
