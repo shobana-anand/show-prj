@@ -16,4 +16,4 @@ phases:
       - echo "Tagging Docker image..."
       - docker tag shob-prj-image:latest 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:success.1
       - echo "Pushing Docker image to ECR..."
-      - docker push 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:latest
+      - docker push 983632673028.dkr.ecr.us-east-1.amazonaws.com/shob-prj:success.1
